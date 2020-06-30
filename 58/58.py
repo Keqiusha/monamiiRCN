@@ -75,3 +75,4 @@ class MainSpider(scrapy.Spider, db.MydbOperator):
                     self.emailService.sendEmail(self.email_content)
     def spider_closed(self, spider):
         self.mydb.close()
+
